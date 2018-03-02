@@ -1,50 +1,65 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
 
 body {
-    margin: 0;
-    font-family: 'Ubuntu Mono', monospace;
-    box-sizing: border-box;
-    overflow: hidden;
+  margin: 0;
+  font-family: 'Ubuntu Mono', monospace;
+  box-sizing: border-box;
+  overflow: hidden;
+  color: #fff;
 }
 
 .App {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  background: linear-gradient(to right, #B771FE, #3CA0EB);
 }
 
 .AppHeader {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 1px solid #fff;
 }
 
 .AppTitle {
-    display: flex;
-    width: 25vw;
-    border-right: 1px solid #ccc;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  width: 25vw;
+  border-right: 1px solid #fff;
+  justify-content: center;
+  padding: 20px;
+  font-size: 2em;
+  box-sizing: border-box;
+}
+
+@media (max-width: 800px) {
+  .AppTitle {
+    font-size: 1.2em;
+  }
+  .AppRoom {
+    font-size: 1em;
+  }
 }
 
 .AppRoom {
-    display: flex;
-    width: 75vw;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  width: 75vw;
+  justify-content: center;
+  padding: 20px;
+  font-size: 1.5em;
+  box-sizing: border-box;
 }
 
 .AppBody {
-    display: flex;
-    flex-direction: row;
-    flex: 1;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
 }
 
 .MessageWrapper {
-    display: flex;
-    flex-direction: column;
-    width: 75vw;
-    flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 75vw;
+  flex: 1;
 }

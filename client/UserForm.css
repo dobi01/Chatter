@@ -1,9 +1,18 @@
+h1 {
+  background: -webkit-linear-gradient(#B771FE, #3CA0EB);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 120px;
+  text-align: center;
+  margin-top: 20vh;
+}
+
 .UserForm {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 100vh;
+  height: 25vh;
 }
 
 .UserInput {
@@ -11,12 +20,15 @@
   padding: 20px;
   font-size: 2em;
   border: 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
   width: 40%;
   font-family: 'Ubuntu Mono', monospace;
 }
 
 @media (max-width: 800px) {
+  h1 {
+    font-size: 60px;
+  }
   .UserInput {
     padding: 10px;
     font-size: 1.3em;

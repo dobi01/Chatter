@@ -8,7 +8,7 @@ import MessageList from './MessageList';
 import UsersList from './UsersList';
 import UserForm from './UserForm';
 
-const socket = io('/');
+const socket = io.connect('http://localhost:3000/socket.io');
 
 class App extends Component {
   constructor(props) {
@@ -52,10 +52,10 @@ class App extends Component {
         <div className={styles.App}>
           <div className={styles.AppHeader}>
             <div className={styles.AppTitle}>
-              Chatter
+              ChatApp
             </div>
             <div className={styles.AppRoom}>
-            Room 0
+              App room
             </div>
           </div>
           <div className={styles.AppBody}>

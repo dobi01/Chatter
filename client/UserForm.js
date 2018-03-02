@@ -18,6 +18,8 @@ class UserForm extends Component {
 
   render() {
     return(
+      <div>
+        <h1>Chatter</h1>
       <form className={styles.UserForm} onSubmit={e => this.handleSubmit(e)}>
         <input
           className={styles.UserInput}
@@ -26,6 +28,7 @@ class UserForm extends Component {
           value={this.state.name}
         />
       </form>
+    </div>
     );
   }
 }
