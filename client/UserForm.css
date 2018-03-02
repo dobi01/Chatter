@@ -1,15 +1,25 @@
 .UserForm {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .UserInput {
-    padding: 20px;
-    font-size: 2em;
-    border: 0;
-    border-bottom: 1px solid #ccc;
-    width: 510px;
+  text-align: center;
+  padding: 20px;
+  font-size: 2em;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  width: 40%;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+@media (max-width: 800px) {
+  .UserInput {
+    padding: 10px;
+    font-size: 1.3em;
+    width: 70%;
+  }
 }

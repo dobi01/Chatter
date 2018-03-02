@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext');
+
 body {
     margin: 0;
+    font-family: 'Ubuntu Mono', monospace;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .App {
@@ -21,7 +26,6 @@ body {
     width: 25vw;
     border-right: 1px solid #ccc;
     justify-content: center;
-    box-sizing: border-box;
     padding: 20px;
 }
 
@@ -29,7 +33,6 @@ body {
     display: flex;
     width: 75vw;
     justify-content: center;
-    box-sizing: border-box;
     padding: 20px;
 }
 

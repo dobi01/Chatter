@@ -44,7 +44,7 @@ class App extends Component {
   render() {
     return this.state.name !== '' ? (
       this.renderLayout()
-    ) : this.renderUserForm() // zaimplementowane w późniejszej części
+    ) : this.renderUserForm()
   }
 
   renderLayout() {
@@ -52,10 +52,10 @@ class App extends Component {
         <div className={styles.App}>
           <div className={styles.AppHeader}>
             <div className={styles.AppTitle}>
-              ChatApp
+              Chatter
             </div>
             <div className={styles.AppRoom}>
-              App room
+            Room 0
             </div>
           </div>
           <div className={styles.AppBody}>
