@@ -32,7 +32,7 @@ module.exports = {
       ] : []).concat(['./client/index.js']),
     output: {
       filename: './bundle.js',
-      path: path.resolve(__dirname, '.')
+      path: path.resolve(__dirname, 'public')
   },
   module: {
     rules: [
